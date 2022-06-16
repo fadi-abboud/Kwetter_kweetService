@@ -45,8 +45,8 @@ jobs:
       env:
         GIT_TAG: ${{ steps.increment-git-tag.outputs.git-tag }}
       run: |-
-        docker tag $IMAGE_NAME:latest europe-west4-docker.pkg.dev/$PROJECT_ID/ kwetter-repo/$IMAGE_NAME:latest
-        docker tag $IMAGE_NAME:latest europe-west4-docker.pkg.dev/$PROJECT_ID/ kwetter-repo/$IMAGE_NAME:$GIT_TAG
-        docker push europe-west4-docker.pkg.dev/$PROJECT_ID/ kwetter-repo/$IMAGE_NAME:latest
-        docker push europe-west4-docker.pkg.dev/$PROJECT_ID/ kwetter-repo/$IMAGE_NAME:$GIT_TAG
+        docker tag $IMAGE_NAME:latest europe-west4-docker.pkg.dev/$PROJECT_ID/kwetter-repo/$IMAGE_NAME:latest
+        docker tag $IMAGE_NAME:latest europe-west4-docker.pkg.dev/$PROJECT_ID/kwetter-repo/$IMAGE_NAME:$GIT_TAG
+        docker push europe-west4-docker.pkg.dev/$PROJECT_ID/kwetter-repo/$IMAGE_NAME:latest
+        docker push europe-west4-docker.pkg.dev/$PROJECT_ID/kwetter-repo/$IMAGE_NAME:$GIT_TAG
 
