@@ -1,5 +1,5 @@
 ---
-name: Build and Push provile service Image to Google Cloud Platform
+name: Build and Push profile service Image to Google Cloud Platform
 on:
   push:
     branches: [ main ]
